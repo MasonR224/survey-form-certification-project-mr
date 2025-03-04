@@ -1,0 +1,80 @@
+* {
+    background: black; 
+  }
+  
+  h1 {
+    font-family: "Paytone one", sans-serif;
+    color: yellow;
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  h3, p {
+    font-family: "Lexend", sans-serif;
+    color: yellow;
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  .info {
+    font-family: "Lexend", sans-serif;
+    color: yellow;
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  #name, #number, #email {
+    background: black;
+    color: yellow;
+    border-color: yellow;
+  }
+  
+  .answers-list {
+    font-family: "Lexend", sans-serif;
+    color: yellow; 
+    text-align: center;
+    margin: 1em auto;
+    padding-left: 66rem;
+    padding-right: 64rem;
+  }
+  
+  .dropdown-answer {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  #dropdown {
+    background: black;
+    color: yellow;
+    border-color: yellow;
+  }
+  
+  .text-answer {
+    text-align: center;
+  }
+  
+  #skill-textarea {
+    font-family: "Lexend", sans-serif;
+    background: black;
+    color: yellow;
+    border-color: yellow;
+  }
+  
+  .tournaments {
+    font-family: "Lexend", sans-serif;
+    color: yellow; 
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  .submit {
+    text-align: center;
+  }
+  
+  #submit {
+    font-family: "Paytone One", sans-serif;
+    font-size: 25px;
+    background: yellow;
+    color: black;
+    border-color: yellow;
+  }
