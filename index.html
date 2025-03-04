@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Paytone+One&display=swap" rel="stylesheet">
+        <title>Spikeball Skill Survey</title>
+       </head>
+       <header>
+         <h1 id="title">Spikeball Skill Survey</h1>
+       </header>
+     <body>
+       <main>
+         <p id="description">This survey is to see what skill level players are and how much experience they have</p>
+         <form id="survey-form" method="post">
+             <section role="region" aria-labelledby="player-info">
+               <div class="info">
+                 <label for="player-name" id="name-label">Name:</label>
+                 <input type="text" name="player-name" id="name" placeholder="John Williams" required/>
+               </div>
+               </div>
+               <div class="info">
+                 <label for="age" id="number-label">Date of Birth:</label>
+                 <input type="number" name="age" id="number" min="1" max="999999999999" placeholder="21" required/>
+               </div>
+               <div class="info">
+                 <label for="player-email" id="email-label">Email:</label>
+                 <input type="email" name="player-email" id="email" placeholder="johnwilliams@example.com" required>
+               </div>
+             </section>
+             <section role="region" aria-labelledby="participation-questions">
+               <div class="question-block">
+                 <h3><span class="sr-only">Have you participated in a tournament before? </span></h3> 
+                 <ul class="answers-list">
+                     <li>
+                       <label for="q1">
+                         <input type="radio" id="q1-a1" name="q1" value="true" />
+                          True
+                       </label>
+                     </li>
+                     <li>
+                       <label for="q1-a2">
+                         <input type="radio" id="q1-a2" name="q1" value="false" />
+                         False
+                       </label>
+                     </li>
+                   </ul>
+               </div>
+             </section>
+        
+             <section role="region" aria-labelledby="division-question">
+               <div class="dropdowns">
+                 <div class="dropdown-block">
+                   <h3 id="divisions">If you answered yes then what division?</h3>
+                 </div>
+                 <div class="dropdown-answer">
+                   <select name="selector" id="dropdown" required>
+                     <option value="">Divisions</option>
+                     <option value="yes">Amatuer</option>
+                     <option value="no">Intermediate</option>
+                     <option value="no">Advanced</option>
+                     <option value="no">Contender</option>
+                     <option value="no">Premier</option>
+                   </select>
+                 </div>
+                 <div class="text-block">
+                   <h3 for="skill-textarea">Any comments about your skill level?</h3>
+                 </div>
+                 <div class="text-answer">
+                   <textarea id="skill-textarea" name="skill-questions" rows="5" cols="35" placeholder="ex. I am a strong server"></textarea>
+                 </div>
+               </div>
+             </section>
+             <section>
+               <div class="tournaments">
+                <h3>Would you be interested in going to one of the following tournaments?</h3>
+                <label for="tournament-question">
+                  <input id="tournament-question" type="checkbox" value="1" required name="tournament-question"/>Seattle Slam
+                  <br/>
+                  <input id="tournament-question" type="checkbox" value="2" required name="tournament-question"/>Boise Invitational
+                  <br/>
+                  <input id="tournament-question" type="checkbox" value="3" required name="tournament-question"/>Portland Open
+                  <br/>
+                  <input id="tournament-question" type="checkbox" value="4" required name="tournament-question"/>BC Classic
+                </label>
+               </div>
+             </section>
+             <br/>
+             <div class="submit">
+              <button id="submit" type="submit">Submit</button>
+             </div>
+           </form>
+       </main>
+     </body>
+</html>
